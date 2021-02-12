@@ -1,5 +1,5 @@
-/* File: test_dynamic.c */
-#include "matrix_dynamic.h"
+/* File: main_int.c */
+#include "matrix_intver.h"
 
 int main() 
 {
