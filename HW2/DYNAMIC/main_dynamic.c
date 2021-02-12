@@ -1,4 +1,4 @@
-/* File: test_dynamic.c */
+/* File: main_dynamic.c */
 #include "matrix_dynamic.h"
 
 int main() 
