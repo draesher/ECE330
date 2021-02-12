@@ -14,9 +14,9 @@ int main()
   matrix_print(b);
   printf("\n a+b:");
   matrix_print(add(a,b));
-  printf("\n Transposed Matrix a: ");
+  printf("\n Matrix a: ");
   matrix_print(a);
-  printf("\n");
-  matrix_print(transpose(a);
+  printf("\n Transposed Matrix a: ");
+  matrix_print(transpose(a));
 }
 
