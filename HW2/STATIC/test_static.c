@@ -1,5 +1,5 @@
 /* File: test_static.c */
-#include "matrix.h"
+#include "matrix_static.h"
 
 int main() 
 {

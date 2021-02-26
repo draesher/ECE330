@@ -9,13 +9,13 @@ using namespace std;
 
 HeartRates::HeartRates(string lastnm, string firstnm, int day, int month, int year) 
 	: lastname(lastnm), firstname (firstnm), dob_day (day), dob_month (month), dob_year (year)
-{
-	/*setLastName(lastname);
-	setFirstName(firstname);
-	setDOBDay(dobday);
-	setDOBMonth(dobmonth);
-	setDOBYear(dobyear);*/
-}
+	{
+		/*setLastName(lastname);
+		setFirstName(firstname);
+		setDOBDay(dobday);
+		setDOBMonth(dobmonth);
+		setDOBYear(dobyear);*/
+	}
 
 int HeartRates::getAge() {
 	int day, month, year;
@@ -26,29 +26,26 @@ int HeartRates::getAge() {
 	cout << "\nFinally, enter the year you are in as of today (YYYY): ";
 	cin >> year;
 	cout << endl;
-	int ageyear = year-this.dob_year;
-	if (month > this.dob_month) {
-		age = ageyear--;
-		return ageyear--;
+	int age = year-dob_year;
+	if (month > dob_month) {
+		return age;
 	}
 	else {
-		if(month < this.dob_month) {
-			age = ageyear;
-			return ageyear;
+		if(month < dob_month) {
+			age--;
+			return age;
 		}
 		else {
-			if (day <= this.dob_day) {
-				age = ageyear;
-				return ageyear;
+			if (day < dob_day) {
+				age--;
+				return age;
 			}
 			else {
-				ageyear--;
-				age = ageyear;
-				return ageyear;
-			}
+				return age;
+			}	
 		}
 	}
-}
+}			
 
 void HeartRates::setDOBDay (int day) {
 	dob_day=day;
@@ -68,7 +65,7 @@ void HeartRates::setLastName(string lastnm) {
 
 void HeartRates::setFirstName(string firstnm) {
 	firstname=firstnm;
-}
+	}
 
 string HeartRates::getFirstName() {
 	return firstname;
@@ -90,10 +87,11 @@ int HeartRates::getDOBYear() {
 	return dob_year;
 }
 
-int HeartRates::getMaximumHeartRate() {
+int HeartRates::getMaximumHeartRate(int age) {
 	return 220-age;
 }
 
-int HeartRates::TargetHeartRate (double ratio) {
-	return floor(getMaximumHeartRate()*ratio);
+int HeartRates::getTargetHeartRate (double ratio,int age) {
+	return floor(getMaximumHeartRate(age)*ratio);
 }
+

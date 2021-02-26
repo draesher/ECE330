@@ -1,4 +1,5 @@
 /* File: main_dynamic.c */
+
 #include "matrix_dynamic.h"
 
 int main() 
@@ -22,7 +23,7 @@ int main()
   
   std::cout << "\n\t Your Matrix: ";
   matrix_print(test);
-  std::cout << "\n Your Transposed Matrix: ");
+  std::cout << "\n Your Transposed Matrix: ";
   trans = transpose(test);
   matrix_print(trans);
   return 0;
