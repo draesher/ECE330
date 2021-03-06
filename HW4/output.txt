@@ -1,0 +1,41 @@
+Employee ID Number: 1
+Name: Jones, Booker T.
+Dept Code: 22
+
+Employee ID Number: 2
+Name: Hendrix, Jimi NMI .
+Dept Code: 14
+
+Salaried Employee:
+
+Employee ID Number: 4
+Name: Freely, Eye P.
+Dept Code: 16
+Base Salary:  $8000
+Actual Salary:  $8000
+
+Salaried Employee:
+
+Employee ID Number: 5
+Name: Door, Cariss A.
+Dept Code: 15
+Base Salary:  $6000
+Actual Salary:  $3000
+
+Hourly Employee:
+
+Employee ID Number: 6
+Name: Ricardo, Ricky R.
+Dept Code: 21
+Hourly Rate:  8.75
+Total Hours Worked:  78     Overtime:  0
+Calculated Pay (including overtime):  $682.5
+
+Hourly Employee:
+
+Employee ID Number: 7
+Name: Bond, James B.
+Dept Code: 30
+Hourly Rate:  15.8
+Total Hours Worked:  90     Overtime:  10
+Calculated Pay (including overtime):  $1659
